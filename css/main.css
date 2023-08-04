@@ -45,8 +45,8 @@ body {
     background-color: var(--color-background);
     font-family: 'PoppinsRegular', 'Rubik', sans-serif;
     color: var(--color-text);   
-    overflow-x: hidden;
-    overflow-y: hidden; 
+    
+    
 }
 
 b {
