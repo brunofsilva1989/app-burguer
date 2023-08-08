@@ -315,7 +315,7 @@ a.navbar-brand {
     cursor: pointer;
 }
 
-.add-numero-items {
+.add-numero-itens {
     color: var(--color-black-heavy);
     padding: 2px 15px;
     border-top: 2px solid var(--color-black-heavy);
@@ -722,8 +722,8 @@ select.form-control {
     position: absolute;
     background-color: var(--color-secondary);
     border-radius: 50px;
-    right: -5;
-    top: -5;
+    right: -5px;
+    top: -5px;
     font-size: 14px;
     font-weight: bold;
     display: flex;
@@ -749,10 +749,27 @@ select.form-control {
     z-index: 1;
 }
 
+.container-mensagens{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+}
 
+.toast {
+    color: var(--color-white);
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
 
+.toast.red{
+    background-color: var(--color-red);
+}
 
-
-
+.toast.green {
+    background-color: var(--color-green);
+}
 
 
