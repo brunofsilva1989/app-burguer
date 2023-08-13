@@ -455,7 +455,9 @@
                         <div class="form-group container-cep">
                             <label>CEP</label>
                             <input class="form-control" type="text" id="txtCEP" />
-                            <a class="btn btn-yellow btn-sm"><i class="fa fa-search"></i></a>
+                            <a class="btn btn-yellow btn-sm" onclick="cardapio.metodos.buscarCep()">
+                                <i class="fa fa-search"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -544,22 +546,7 @@
 
                     <div class="col-12">
                         <div class="row" id="listaItensResumo">
-
-                            <div class="col-12 item-carrinho resumo">
-                                <div class="img-produto-resumo">
-                                    <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg" />
-                                </div>
-                                <div class="dados-produto">
-                                    <p class="title-produto-resumo"><b>Nome do Produto</b>
-                                    </p>
-                                    <p class="price-produto-resumo"><b>R$ 100,00</b>
-                                    </p>                                    
-                                </div>
-                                <p class="quantidade-produto-resumo">
-                                    x <b>3</b>
-                                </p>
-                            </div>
-                        
+                                                
                         </div>
                     </div>
 
@@ -574,12 +561,9 @@
                             <i class="fas fa-map-marked-alt"></i>
                         </div>
                         <div class="dados-produto">
-                            <p class="texto-endereco">
-                                <b id="resumoEndereco">Rua Tumiaru, 61, Parque João</b>
+                            <p class="texto-endereco"><b id="resumoEndereco"></b>
                             </p>
-                            <p class="cidade-endereco" id="cidadeEndereco">
-                                Cidade-SP / 09290-070
-                            </p>
+                            <p class="cidade-endereco" id="cidadeEndereco"></p>
                         </div>
 
                     </div>
@@ -607,13 +591,13 @@
                     </p>
                 </div>
 
-                <a onclick="cardapio.metodos.carregarEtapa(2)" class="btn btn-yellow float-right" id="btnEtapaPedido">Continuar</a>
+                <a onclick="cardapio.metodos.carregarEndereco()" class="btn btn-yellow float-right" id="btnEtapaPedido">Continuar</a>
 
 
-                <a onclick="cardapio.metodos.carregarEtapa(3)" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">Revisar Pedido</a>
+                <a onclick="cardapio.metodos.resumoPedido()" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">Revisar Pedido</a>
 
 
-                <a class="btn btn-yellow float-right hidden" id="btnEtapaResumo">Enviar Pedido</a>
+                <a href="#" class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">Enviar Pedido</a>
                 
 
                 <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white float-right mr-3 hidden" id="btnVoltar">Voltar</a>
