@@ -396,13 +396,20 @@ cardapio.metodos = {
     //validação antes de prosseguir para a etapa 3
     resumoPedido: () => {
 
+        let cliente = $("#txtCliente").val().trim();
         let cep = $("#txtCEP").val().trim();
         let endereco = $("#txtEndereco").val().trim();
         let bairro = $("#txtBairro").val().trim();
         let cidade = $("#txtCidade").val().trim();
         let uf = $("#ddlUf").val().trim();
         let numero = $("#txtNumero").val().trim();
-        let complemento = $("#txtComplemento").val().trim();
+        let complemento = $("#txtComplemento").val().trim();        
+
+        if(cliente.length <= 0){
+            cardapio.metodos.mensagem('Informe seu nome para contato.')
+            $("$txtCliente").focus();
+            return;
+        }
 
         if(cep.length <= 0){
             cardapio.metodos.mensagem('Informe o Cep por favor.')
@@ -441,6 +448,7 @@ cardapio.metodos = {
         }
 
         MEU_ENDERECO = {
+            cliente: cliente,
             cep: cep,
             endereco: endereco,
             bairro: bairro,
@@ -470,8 +478,8 @@ cardapio.metodos = {
                 $("#listaItensResumo").append(temp)
         })
 
-        $("#resumoEndereco").html(`${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`);
-        $("#cidadeEndereco").html(`${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} / ${MEU_ENDERECO.complemento}`);
+        $("#resumoEndereco").html(`Cliente: ${MEU_ENDERECO.cliente} - ${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`);
+        $("#cidadeEndereco").html(`${MEU_ENDERECO.cidade}-${MEU_ENDERECO.uf} / ${MEU_ENDERECO.cep} / ${MEU_ENDERECO.complemento}`);        
 
         cardapio.metodos.finalizarPedido();
     },
@@ -481,7 +489,7 @@ cardapio.metodos = {
 
         if(MEU_CARRINHO.length > 0 && MEU_ENDERECO != null){
 
-            var texto = 'Olá gostaria de fazer um pedido:';
+            var texto = `Olá, sou ${MEU_ENDERECO.cliente}, e gostaria de fazer um pedido:`;
             texto += `\n**Itens do pedido:*\n\n\${itens}`;
             texto += '\n*Endereco de entrega:**';
             texto += `\n${MEU_ENDERECO.endereco}, ${MEU_ENDERECO.numero}, ${MEU_ENDERECO.bairro}`;
