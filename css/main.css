@@ -156,19 +156,20 @@ a.navbar-brand {
     width: 50px;
 }
 
+/* Parte que mexe com Hamburguer do Banner e o Fundo*/
 .card-banner {
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     border-radius: 170px;
     background-color: #f4c949;
     position: absolute;
     right: 0;
-    top: -80px;
+    top: -20px;
 }
 
 .img-banner img {
     position: absolute;
-    width: 400px;
+    width: 500px;
     top: 30px;
     right: 15px;
 }
@@ -182,16 +183,16 @@ a.navbar-brand {
 }
 
 .card-case {
-    width: 350px;
-    font-size: 14px;
+    width: 400px;
+    font-size: 16px;
     position: absolute;
     right: 0;
-    bottom: -75px;
+    bottom: -40px;
 }
 
 .card-case-name {
     position: absolute;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--color-primary);
     right: 20px;
     bottom: -4px;

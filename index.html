@@ -28,7 +28,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg pl-0 pr-0">
                 <a href="#" class="navbar-brand">
-                    <img src="./img/burgued.png" width="160" class="img-logo">
+                    <img src="./img/burgued.png" width="220" class="img-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
                     <span class="navbar-toggler-icon">
@@ -37,8 +37,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto mr-auto">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="#reservas" class="nav-link"><b>Reservas</b></a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a href="#sobre" class="nav-link"><b>Sobre</b></a>
                         </li>
                         <li class="nav-item">
                             <a href="#servicos" class="nav-link"><b>Serviços</b></a>
@@ -70,14 +73,13 @@
                     <div class="d-flex text-banner">
                         <h1><b>Escolha seu Burgued <b class="color-primary">favorito</b></b></h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt animi, enim modi voluptatem
-                            sapiente pariatur.
+                            Burgued sempre oferecendo o melhor hamburguer da região para que você tenha a melhor experiencia.
                         </p>
                         <div>
                             <a href="#cardapio" class="btn btn-yellow mt-4 mr-3">
                                 Ver cardápio
                             </a>
-                            <a href="#" class="btn btn-white btn-icon-left mt-4">
+                            <a href="#" class="btn btn-white btn-icon-left mt-4" id="btnLigar">
                                 <span class="icon-left">
                                     <i class="fa fa-phone"></i>
                                 </span>
@@ -85,13 +87,13 @@
                             </a>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                    <a href="https://www.instagram.com" target="_blank" class="btn btn-sm btn-white btn-social mt-4 mr-3">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                    <a href="https://www.facebook.com" target="_blank" class="btn btn-sm btn-white btn-social mt-4 mr-3">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="#" class="btn btn-sm btn-white btn-social mt-4">
+                    <a href="https://web.whatsapp.com" target="_blank" class="btn btn-sm btn-white btn-social mt-4">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -187,6 +189,9 @@
                     <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('burgers')">
                         <i class="fas fa-hamburger"></i>&nbsp;Burguers
                     </a>
+                    <a id="menu-combos" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('combos')">
+                        <i class="fas fa-hamburger"></i>&nbsp;Combos
+                    </a>
                     <!--<a id="menu-pizzas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('pizzas')">
                         <i class="fas fa-pizza-slice"></i>&nbsp; Pizzas
                     </a>
@@ -235,7 +240,7 @@
                 <div class="col-5 text-center">
                     <div class="card-depoimentos"></div>
                     <div class="d-flex img-banner">
-                        <img src="./img/pizzas.png" alt="">
+                        <img src="./img/burguer.png" alt="">
                     </div>
                 </div>
 
@@ -328,11 +333,11 @@
 
                     </div>
 
-                    <a href="" class="btn btn-sm btn-white btn-social mr-3 active">1</a>
+                    <a id="#btnDepoimento-1" class="btn btn-sm btn-white btn-social mr-3 active" onclick="cardapio.metodos.abrirDepoimento(1)">1</a>
 
-                    <a href="" class="btn btn-sm btn-white btn-social mr-3">2</a>
+                    <a id="#btnDepoimento-2" class="btn btn-sm btn-white btn-social mr-3" onclick="cardapio.metodos.abrirDepoimento(2)">2</a>
 
-                    <a href="" class="btn btn-sm btn-white btn-social">3</a>
+                    <a id="#btnDepoimento-3" class="btn btn-sm btn-white btn-social" onclick="cardapio.metodos.abrirDepoimento(3)">3</a>
                 </div>
 
             </div>
@@ -343,7 +348,7 @@
     </section>
 
     <!--Sessão de Reservas do Site-->>
-    <section class="reserva" id="reservas">
+    <!-- <section class="reserva" id="reservas">
 
         <div class="container">
 
@@ -363,7 +368,7 @@
                                     Mande uma mensagem clicando no botão abaixo. <br>
                                     Reserve sua data e horário de forma simples e rápida.
                                 </p>
-                                <a class="btn btn-yellow mt-4">
+                                <a class="btn btn-yellow mt-4" href="#" id="btnReserva" target="_blank">
                                     Fazer Reserva
                                 </a>
                             </div>
@@ -385,7 +390,7 @@
 
         </div>
 
-    </section>
+    </section> -->
 
     <!--Sessão Footer-->>
     <footer class="rodape">

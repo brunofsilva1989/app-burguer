@@ -514,5 +514,34 @@ var MENU = {
             "dsc": "Mesquite Smoked Peppered Beef Tenderloin",
             "price": 165
         }
+    ],
+    "combos":[
+        {
+            "id": "burgued-frango-especial",
+            "img": "./img/cardapio/combos/burgued-frango.jpg",
+            "name": "Flannery Chicken",
+            "dsc": "Burgued de Frango",
+            "price": 39
+        },
+        {
+            "id": "burgued-frango-especial2",
+            "img": "./img/cardapio/combos/burgued-frango.jpg",
+            "name": "Flannery Chicken",
+            "dsc": "Burgued de Frango",
+            "price": 39
+        },
+        {
+            "id": "burgued-frango-especial3",
+            "img": "./img/cardapio/combos/burgued-frango.jpg",
+            "name": "Flannery Chicken",
+            "dsc": "Burgued de Frango",
+            "price": 39
+        },{
+            "id": "burgued-frango-especial4",
+            "img": "./img/cardapio/combos/burgued-frango.jpg",
+            "name": "Flannery Chicken",
+            "dsc": "Burgued de Frango",
+            "price": 39
+        }
     ]
 }
