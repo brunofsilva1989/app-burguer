@@ -2,12 +2,20 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+    
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Burgued Artesanal - Seja bem-vindo!"/>
+    <meta name="keywords" content="Burgued, Hamburguer, Artesanal, Delivery"/>
+    <meta name="author" content="Burgued Artesanal"/>
+    <meta name="robots" content="index, follow"/>
+    
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fontawesome.css">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsivo.css">
     <title>Burgued Artesanal - Seja bem-vindo!</title>
 </head>
 
@@ -53,7 +61,7 @@
                             <a href="#depoimentos" class="nav-link"><b>Depoimentos</b></a>
                         </li>
                     </ul>
-                    <a class="btn btn-white btn-icon wow fadeIn" onclick="cardapio.metodos.abrirCarrinho(true)">                        
+                    <a class="btn btn-white btn-icon wow fadeIn" onclick="cardapio.metodos.abrirCarrinho(true)">
                         Meu Carrinho <span class="icon">
                             <div class="container-total-carrinho badge-total-carrinho hidden">0</div>
                             <i class="fa fa-shopping-bag"></i>
@@ -73,9 +81,10 @@
                     <div class="d-flex text-banner">
                         <h1 class="wow fadeInLeft"><b>Escolha seu Burgued <b class="color-primary">favorito</b></b></h1>
                         <p class="wow fadeInLeft delay-02s">
-                            Burgued sempre oferecendo o melhor hamburguer da região para que você tenha a melhor experiencia.
+                            Burgued sempre oferecendo o melhor hamburguer da região para que você tenha a melhor
+                            experiencia.
                         </p>
-                        <div class="wow fadeIn delay-05s"> 
+                        <div class="wow fadeIn delay-05s">
                             <a href="#cardapio" class="btn btn-yellow mt-4 mr-3">
                                 Ver cardápio
                             </a>
@@ -87,13 +96,16 @@
                             </a>
                         </div>
                     </div>
-                    <a href="https://www.instagram.com" target="_blank" class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-07s">
+                    <a href="https://www.instagram.com" target="_blank"
+                        class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-07s">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.facebook.com" target="_blank" class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-07s">
+                    <a href="https://www.facebook.com" target="_blank"
+                        class="btn btn-sm btn-white btn-social mt-4 mr-3 wow fadeIn delay-07s">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a href="https://web.whatsapp.com" target="_blank" class="btn btn-sm btn-white btn-social mt-4 wow fadeIn delay-07s">
+                    <a href="https://web.whatsapp.com" target="_blank"
+                        class="btn btn-sm btn-white btn-social mt-4 wow fadeIn delay-07s">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -186,10 +198,12 @@
                 </div>
 
                 <div class="col-12 container-menu wow fadeInUp">
-                    <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('burgers')">
+                    <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active"
+                        onclick="cardapio.metodos.obterItensCardapio('burgers')">
                         <i class="fas fa-hamburger"></i>&nbsp;Burguers
                     </a>
-                    <a id="menu-combos" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('combos')">
+                    <a id="menu-combos" class="btn btn-white btn-sm mr-3 active"
+                        onclick="cardapio.metodos.obterItensCardapio('combos')">
                         <i class="fas fa-hamburger"></i>&nbsp;Combos
                     </a>
                     <!--<a id="menu-pizzas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('pizzas')">
@@ -201,17 +215,19 @@
                     <a id="menu-steaks" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('steaks')">
                         <i class="fas fa-bacon"></i>&nbsp; Steaks
                     </a>-->
-                    <a id="menu-bebidas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('bebidas')">
+                    <a id="menu-bebidas" class="btn btn-white btn-sm mr-3"
+                        onclick="cardapio.metodos.obterItensCardapio('bebidas')">
                         <i class="fas fa-cocktail"></i>&nbsp; Bebidas
                     </a>
-                    <a id="menu-sobremesas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('sobremesas')">
+                    <a id="menu-sobremesas" class="btn btn-white btn-sm mr-3"
+                        onclick="cardapio.metodos.obterItensCardapio('sobremesas')">
                         <i class="fas fa-ice-cream"></i>&nbsp; Sobremesas
                     </a>
                 </div>
 
                 <div class="col-12">
                     <div class="row" id="itensCardapio">
-                                    
+
                     </div>
                 </div>
 
@@ -224,6 +240,40 @@
 
         </div>
 
+    </section>
+
+    <!--Sessão sobre, aonde descreve-se um pouco sobre a loja-->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card-sobre
+                    wow fadeIn"></div>
+                    <div class="d-flex img
+                    wow fadeIn">
+                        <img src="./img/burguer.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <span class="hint-title
+                    wow fadeIn"><b>Sobre</b></span>
+                    <h1 class="title
+                    wow fadeIn">
+                        <b>Conheça um pouco sobre nós</b>
+                    </h1>
+                    <p class="wow fadeIn
+                    ">
+                        O Burgued Artesanal é um restaurante que preza pela qualidade e sabor dos seus produtos. <br>
+                        Nossos hambúrgueres são feitos com ingredientes frescos e selecionados, garantindo a melhor
+                        experiência para você.
+                    </p>
+                    <p class="wow fadeIn
+                    ">
+                        Venha nos conhecer e se surpreenda com a qualidade dos nossos produtos.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!--Sessão de depoimentos do site-->
@@ -333,18 +383,21 @@
 
                     </div>
 
-                    <a id="#btnDepoimento-1" class="btn btn-sm btn-white btn-social mr-3 active wow fadeIn" onclick="cardapio.metodos.abrirDepoimento(1)">1</a>
+                    <a id="#btnDepoimento-1" class="btn btn-sm btn-white btn-social mr-3 active wow fadeIn"
+                        onclick="cardapio.metodos.abrirDepoimento(1)">1</a>
 
-                    <a id="#btnDepoimento-2" class="btn btn-sm btn-white btn-social mr-3 wow fadeIn" onclick="cardapio.metodos.abrirDepoimento(2)">2</a>
+                    <a id="#btnDepoimento-2" class="btn btn-sm btn-white btn-social mr-3 wow fadeIn"
+                        onclick="cardapio.metodos.abrirDepoimento(2)">2</a>
 
-                    <a id="#btnDepoimento-3" class="btn btn-sm btn-white btn-social wow fadeIn" onclick="cardapio.metodos.abrirDepoimento(3)">3</a>
+                    <a id="#btnDepoimento-3" class="btn btn-sm btn-white btn-social wow fadeIn"
+                        onclick="cardapio.metodos.abrirDepoimento(3)">3</a>
                 </div>
 
             </div>
 
         </div>
 
-
+        <!--Voltar ao topo-->
     </section>
 
     <!--Sessão de Reservas do Site-->>
@@ -450,7 +503,7 @@
         <div class="m-body">
             <div class="container">
 
-                <div id="itensCarrinho" class="row mr-o ml-0 animated fadeIn hidden">                    
+                <div id="itensCarrinho" class="row mr-o ml-0 animated fadeIn hidden">
 
                 </div>
 
@@ -458,7 +511,7 @@
 
                     <div class="col-4">
                         <div class="form-group container-cep">
-                            <label>CEP</label>                            
+                            <label>CEP</label>
                             <input class="form-control" type="text" id="txtCEP" />
                             <a class="btn btn-yellow btn-sm" onclick="cardapio.metodos.buscarCep()">
                                 <i class="fa fa-search"></i>
@@ -557,7 +610,7 @@
 
                     <div class="col-12">
                         <div class="row" id="listaItensResumo">
-                                                
+
                         </div>
                     </div>
 
@@ -602,16 +655,20 @@
                     </p>
                 </div>
 
-                <a onclick="cardapio.metodos.carregarEndereco()" class="btn btn-yellow float-right" id="btnEtapaPedido">Continuar</a>
+                <a onclick="cardapio.metodos.carregarEndereco()" class="btn btn-yellow float-right"
+                    id="btnEtapaPedido">Continuar</a>
 
 
-                <a onclick="cardapio.metodos.resumoPedido()" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">Revisar Pedido</a>
+                <a onclick="cardapio.metodos.resumoPedido()" class="btn btn-yellow float-right hidden"
+                    id="btnEtapaEndereco">Revisar Pedido</a>
 
 
-                <a href="#" class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">Enviar Pedido</a>
-                
+                <a href="#" class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">Enviar
+                    Pedido</a>
 
-                <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white float-right mr-3 hidden" id="btnVoltar">Voltar</a>
+
+                <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white float-right mr-3 hidden"
+                    id="btnVoltar">Voltar</a>
 
             </div>
 
